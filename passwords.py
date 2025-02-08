@@ -1,16 +1,6 @@
 import random
 import string
 
-# import: Permite incluir módulos externos y acceder a sus funciones y variables.
-# input(): Función que muestra un mensaje y espera la entrada del usuario. Devuelve una cadena.
-# int(): Convierte una cadena o número a un entero.
-# random.choice(seq): Devuelve un elemento aleatorio de la secuencia "seq".
-# La expresión (random.choice(caracteres) for _ in range(longitud)) genera un iterador que produce un carácter aleatorio por cada iteración en range(longitud).
-# ''.join(iterable): Une todos los elementos (que deben ser cadenas) de la variable iterable en una sola cadena. El separador es la cadena que precede a join (en este caso, una cadena vacía '').
-# list.append(item): Añade item al final de la lista.
-# random.shuffle(lista): Mezcla los elementos de la lista en orden aleatorio.
-# La variable _ en bucles: Es una convención en Python para indicar que la variable de iteración no se usará.
-
 def generar_contrasena_basica(longitud):
     """
     Genera una contraseña básica de la longitud especificada 
