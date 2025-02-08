@@ -14,9 +14,6 @@ Crea contraseñas aleatorias en Python (no es la opción más segura).
 
 3. Solicitar la longitud de la contraseña:
     - `longitud = int(input("Ingresa la longitud de la contraseña: ")):` Guarda la longitud de la contraseña elegida por el usuario.
-  
-      - `input("...")`: Muestra un mensaje al usuario y espera que ingreses un valor (será de tipo cadena/string).
-      - `int(...)`: Convierte el string obtenido en un número entero.
 
 4. Seleccionar al menos un carácter de cada grupo:
     - `contrasena = [ random.choice(letras), random.choice(digitos), random.choice(simbolos) ]`: Crea una lista llamada `contrasena` que contiene un cáracter escogido de manera aleatoria de `letras`, `digitos` y `simbolos`.
@@ -24,6 +21,7 @@ Crea contraseñas aleatorias en Python (no es la opción más segura).
 5. Caracteres aleatorios adicionales:
     - `todos = letras + digitos + simbolos`: Concatena los strings `letras`, `digitos` y `simbolos` en la variable `todos`.
     - `for _ in range(longitud - 3): contrasena.append(random.choice(todos))`: El ciclo `for` se ejecuta `longitud - 3` veces (ya que ya se han añadido 3 caracteres iniciales) y en cada iteración se selecciona y agrega de manera aleatoria un carácter de la variable `todos` a la lista `contrasena`.
+
       - La variable `_` se usa convencionalmente cuando el valor de iteración no es necesario.
   
 6. Mezclar los caracteres para evitar un orden predecible:
